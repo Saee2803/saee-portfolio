@@ -1,4 +1,5 @@
-import GitHubActivity from "../components/GitHubActivity";
+import GithubActivity from "../components/github/GithubActivity";
+import GitHubStats from "../components/github/GitHubStats";
 import AchievementsSection from "../sections/AchievementsSection";
 import BlogsSection from "../sections/BlogsSection";
 import ContactSection from "../sections/ContactSection";
@@ -18,7 +19,8 @@ export default function Home() {
       <ProjectsSection />
       <ExperienceSection />
       <AchievementsSection />
-      <GitHubActivity />
+      <GithubActivity />
+      <GitHubStats />
       <BlogsSection />
       <ResumeSection />
       <ContactSection />

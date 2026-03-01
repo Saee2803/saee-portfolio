@@ -4,12 +4,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
     FiArrowLeft,
     FiCalendar,
+    FiCheck,
     FiClock,
-    FiShare2,
+    FiCopy,
+    FiLinkedin,
+    FiList,
+    FiTwitter,
     FiUser,
 } from "react-icons/fi";
 import { getBlogBySlug } from "../../../lib/blogData";
@@ -21,6 +25,29 @@ interface BlogSlugPageProps {
 export default function BlogSlugPage({ params }: BlogSlugPageProps) {
   const blog = getBlogBySlug(params.slug);
   const [readProgress, setReadProgress] = useState(0);
+  const [copied, setCopied] = useState(false);
+  const [tocOpen, setTocOpen] = useState(false);
+
+  // Extract headings for Table of Contents
+  const headings = useMemo(() => {
+    if (!blog) return [];
+    const lines = blog.content.split("\n");
+    return lines
+      .filter(
+        (line) =>
+          line.trim().startsWith("## ") || line.trim().startsWith("### "),
+      )
+      .map((line) => {
+        const trimmed = line.trim();
+        const level = trimmed.startsWith("### ") ? 3 : 2;
+        const text = trimmed.replace(/^#{2,3}\s/, "");
+        const id = text
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "");
+        return { level, text, id };
+      });
+  }, [blog]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,16 +66,26 @@ export default function BlogSlugPage({ params }: BlogSlugPageProps) {
     notFound();
   }
 
-  const handleShare = async () => {
-    if (navigator.share) {
-      await navigator.share({
-        title: blog.title,
-        url: window.location.href,
-      });
-    } else {
-      await navigator.clipboard.writeText(window.location.href);
-      alert("Link copied to clipboard!");
-    }
+  const pageUrl = typeof window !== "undefined" ? window.location.href : "";
+
+  const handleCopyLink = async () => {
+    await navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleShareLinkedIn = () => {
+    window.open(
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`,
+      "_blank",
+    );
+  };
+
+  const handleShareTwitter = () => {
+    window.open(
+      `https://twitter.com/intent/tweet?text=${encodeURIComponent(blog.title)}&url=${encodeURIComponent(pageUrl)}`,
+      "_blank",
+    );
   };
 
   return (
@@ -125,18 +162,101 @@ export default function BlogSlugPage({ params }: BlogSlugPageProps) {
               <FiClock className="w-4 h-4" />
               {blog.readTime}
             </div>
-            <button
-              onClick={handleShare}
-              className="ml-auto flex items-center gap-2 px-4 py-2 text-sm rounded-lg
-                         bg-slate-100 dark:bg-slate-800
-                         text-gray-600 dark:text-gray-400
-                         hover:bg-slate-200 dark:hover:bg-slate-700
-                         transition-colors"
-            >
-              <FiShare2 className="w-4 h-4" />
-              Share
-            </button>
+
+            {/* Share buttons */}
+            <div className="ml-auto flex items-center gap-2">
+              <button
+                onClick={handleShareLinkedIn}
+                className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800
+                           text-gray-600 dark:text-gray-400
+                           hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600
+                           transition-colors"
+                title="Share on LinkedIn"
+              >
+                <FiLinkedin className="w-4 h-4" />
+              </button>
+              <button
+                onClick={handleShareTwitter}
+                className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800
+                           text-gray-600 dark:text-gray-400
+                           hover:bg-sky-100 dark:hover:bg-sky-900/30 hover:text-sky-500
+                           transition-colors"
+                title="Share on Twitter"
+              >
+                <FiTwitter className="w-4 h-4" />
+              </button>
+              <button
+                onClick={handleCopyLink}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg
+                           bg-slate-100 dark:bg-slate-800
+                           text-gray-600 dark:text-gray-400 text-sm
+                           hover:bg-slate-200 dark:hover:bg-slate-700
+                           transition-colors"
+                title="Copy link"
+              >
+                {copied ? (
+                  <>
+                    <FiCheck className="w-4 h-4 text-green-500" />
+                    <span className="text-green-500">Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <FiCopy className="w-4 h-4" />
+                    <span>Copy</span>
+                  </>
+                )}
+              </button>
+            </div>
           </motion.div>
+
+          {/* Table of Contents */}
+          {headings.length > 0 && (
+            <motion.div
+              className="mb-10 rounded-xl border border-slate-200 dark:border-slate-700
+                         bg-white dark:bg-slate-900/60 backdrop-blur overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.35 }}
+            >
+              <button
+                onClick={() => setTocOpen(!tocOpen)}
+                className="w-full flex items-center gap-3 px-6 py-4 text-left
+                           hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
+              >
+                <FiList className="w-5 h-5 text-primary-500" />
+                <span className="font-semibold text-gray-900 dark:text-white">
+                  Table of Contents
+                </span>
+                <motion.span
+                  className="ml-auto text-gray-400"
+                  animate={{ rotate: tocOpen ? 180 : 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  ▼
+                </motion.span>
+              </button>
+              {tocOpen && (
+                <motion.nav
+                  className="px-6 pb-4 space-y-1"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {headings.map((h, i) => (
+                    <a
+                      key={i}
+                      href={`#${h.id}`}
+                      className={`block py-1.5 text-sm transition-colors hover:text-primary-500
+                                 ${h.level === 3 ? "pl-6" : "pl-2"}
+                                 text-gray-600 dark:text-gray-400`}
+                    >
+                      {h.text}
+                    </a>
+                  ))}
+                </motion.nav>
+              )}
+            </motion.div>
+          )}
 
           {/* Article content */}
           <motion.article
@@ -180,18 +300,36 @@ export default function BlogSlugPage({ params }: BlogSlugPageProps) {
                 }
                 if (trimmed.startsWith("## ")) {
                   flushList();
+                  const text = trimmed.replace("## ", "");
+                  const id = text
+                    .toLowerCase()
+                    .replace(/[^a-z0-9]+/g, "-")
+                    .replace(/(^-|-$)/g, "");
                   elements.push(
-                    <h2 key={i} className="text-2xl font-bold mt-10 mb-4">
-                      {trimmed.replace("## ", "")}
+                    <h2
+                      key={i}
+                      id={id}
+                      className="text-2xl font-bold mt-10 mb-4 scroll-mt-20"
+                    >
+                      {text}
                     </h2>,
                   );
                   return;
                 }
                 if (trimmed.startsWith("### ")) {
                   flushList();
+                  const text = trimmed.replace("### ", "");
+                  const id = text
+                    .toLowerCase()
+                    .replace(/[^a-z0-9]+/g, "-")
+                    .replace(/(^-|-$)/g, "");
                   elements.push(
-                    <h3 key={i} className="text-xl font-semibold mt-8 mb-3">
-                      {trimmed.replace("### ", "")}
+                    <h3
+                      key={i}
+                      id={id}
+                      className="text-xl font-semibold mt-8 mb-3 scroll-mt-20"
+                    >
+                      {text}
                     </h3>,
                   );
                   return;

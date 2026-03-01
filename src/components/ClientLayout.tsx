@@ -7,7 +7,8 @@ import Footer from "./Footer";
 import LoadingScreen from "./LoadingScreen";
 import Navbar from "./Navbar";
 import PageTransition from "./PageTransition";
-import RouteProgress from "./RouteProgress";
+import PortfolioChatbot from "./ai/PortfolioChatbot";
+import RouteProgress from "./navigation/RouteProgress";
 
 interface ClientLayoutProps {
   children: ReactNode;
@@ -38,6 +39,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
             <PageTransition>{children}</PageTransition>
           </main>
           {!isBlogSlug && <Footer />}
+          <PortfolioChatbot />
         </div>
       )}
     </>

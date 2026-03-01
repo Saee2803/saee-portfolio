@@ -12,6 +12,7 @@ import ProjectsGrid from "../components/projects/ProjectsGrid";
 const projects: ProjectData[] = [
   {
     title: "JeevanRakshak",
+    slug: "jeevanrakshak",
     description:
       'JeevanRakshak (जीवनरक्षक — "Life Saver") is a production-grade, offline-first Progressive Web App designed to provide instant, expert-verified emergency guidance when every second counts.',
     image: "/Projects/JeevanRakshak.png",
@@ -21,6 +22,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "AeroSentinel AI",
+    slug: "aerosentinel-ai",
     description:
       "AI-powered aviation safety system that predicts flight risks and detects anomalies using real-time flight data. Provides risk alerts and emergency recommendations for pilots and operators.",
     image: "/Projects/AerpGuardian.png",
@@ -30,6 +32,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "DBGuardian AI",
+    slug: "dbguardian-ai",
     description:
       "AI-powered Oracle Database Performance Analysis Tool that works like a Senior DBA — identifies problematic SQL, performs root cause analysis, and provides actionable recommendations.",
     image: "/Projects/DB_Guardian.png",
@@ -39,6 +42,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "CyberRakshak AI",
+    slug: "cyberrakshak-ai",
     description:
       "Personal Protection System against Social Media Scams and Digital Fraud. Detects and prevents cyber threats using AI-driven analysis.",
     image: "/Projects/CyberRakshak AI.png",
@@ -48,6 +52,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "Interview.AI",
+    slug: "interview-ai",
     description:
       "AI-powered interview preparation platform with real-time mock interviews, intelligent question generation, resume builder, performance analytics, and company-wise preparation tools.",
     image: "/Projects/Interview.AI.png",
@@ -57,6 +62,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "CampusAI",
+    slug: "campus-ai",
     description:
       "Transforms the traditional student onboarding process into a seamless, AI-driven digital ecosystem delivering structured, personalized, and real-time guidance from admission to integration.",
     image: "/Projects/Campus AI.png",
@@ -66,6 +72,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "SkillAutofill",
+    slug: "skill-autofill",
     description:
       "An intelligent system that analyzes job descriptions and user profiles to provide skill gap analysis, personalized learning roadmaps, resume improvements, and more.",
     image: "/Projects/SkillAutofill.png",
@@ -75,6 +82,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "ResumeIQ",
+    slug: "resume-iq",
     description:
       "Create ATS-friendly resumes with intelligent JD Analysis. Simplifies the process of building professional, optimized resumes in minutes.",
     image: "/Projects/ResumeIQ.png",
@@ -84,6 +92,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "GitVio",
+    slug: "gitvio",
     description:
       "Create beautiful portfolio websites directly from your GitHub profile. Instantly generate a polished developer portfolio.",
     image: "/Projects/GitVio.png",
@@ -93,6 +102,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "Star Weather Performance",
+    slug: "star-weather",
     description:
       "Advanced weather website where users can view current conditions, forecasts, air quality, weather maps, and more — built for a seamless, responsive experience.",
     image: "/Projects/Star Weather Performance.png",
