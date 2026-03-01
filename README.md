@@ -22,22 +22,22 @@
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🏠 **Hero Section** | Animated introduction with gradient text, typing effects & social links |
-| 🛠️ **Skills** | Categorized skill cards — Programming, ML/AI, Deep Learning, BI Tools & more |
-| 🎓 **Education** | Academic timeline with institution details |
-| 🚀 **Projects** | Interactive project gallery with case study pages for each project |
-| 💼 **Experience** | Professional experience timeline |
-| 🏆 **Achievements** | Awards, certifications & accomplishments |
-| 🐙 **GitHub Activity** | Live GitHub contribution calendar & stats |
-| 📝 **Blogs** | Technical blog posts with full reading pages |
-| 📄 **Resume** | Downloadable resume section |
-| 📬 **Contact** | Contact form powered by EmailJS |
-| 🌙 **Dark/Light Mode** | Smooth theme toggle with system preference detection |
-| 🎨 **Custom Cursor** | Interactive custom cursor for desktop |
-| ⚡ **Page Transitions** | Smooth route transitions with NProgress loading bar |
-| 📱 **Fully Responsive** | Optimized for mobile, tablet & desktop |
+| Feature                 | Description                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| 🏠 **Hero Section**     | Animated introduction with gradient text, typing effects & social links      |
+| 🛠️ **Skills**           | Categorized skill cards — Programming, ML/AI, Deep Learning, BI Tools & more |
+| 🎓 **Education**        | Academic timeline with institution details                                   |
+| 🚀 **Projects**         | Interactive project gallery with case study pages for each project           |
+| 💼 **Experience**       | Professional experience timeline                                             |
+| 🏆 **Achievements**     | Awards, certifications & accomplishments                                     |
+| 🐙 **GitHub Activity**  | Live GitHub contribution calendar & stats                                    |
+| 📝 **Blogs**            | Technical blog posts with full reading pages                                 |
+| 📄 **Resume**           | Downloadable resume section                                                  |
+| 📬 **Contact**          | Contact form powered by EmailJS                                              |
+| 🌙 **Dark/Light Mode**  | Smooth theme toggle with system preference detection                         |
+| 🎨 **Custom Cursor**    | Interactive custom cursor for desktop                                        |
+| ⚡ **Page Transitions** | Smooth route transitions with NProgress loading bar                          |
+| 📱 **Fully Responsive** | Optimized for mobile, tablet & desktop                                       |
 
 ---
 
@@ -45,15 +45,15 @@
 
 <div align="center">
 
-| Technology | Purpose |
-|:---:|:---:|
-| ![Next.js](https://img.shields.io/badge/Next.js_14-000?style=flat-square&logo=nextdotjs&logoColor=white) | Framework (App Router) |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | Type Safety |
-| ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) | Styling |
-| ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white) | Animations |
-| ![React Icons](https://img.shields.io/badge/React_Icons-61DAFB?style=flat-square&logo=react&logoColor=black) | Icons |
-| ![EmailJS](https://img.shields.io/badge/EmailJS-FC0?style=flat-square&logoColor=black) | Contact Form |
-| ![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white) | Deployment |
+|                                                      Technology                                                      |        Purpose         |
+| :------------------------------------------------------------------------------------------------------------------: | :--------------------: |
+|       ![Next.js](https://img.shields.io/badge/Next.js_14-000?style=flat-square&logo=nextdotjs&logoColor=white)       | Framework (App Router) |
+|   ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)    |      Type Safety       |
+| ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) |        Styling         |
+|  ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)   |       Animations       |
+|     ![React Icons](https://img.shields.io/badge/React_Icons-61DAFB?style=flat-square&logo=react&logoColor=black)     |         Icons          |
+|                ![EmailJS](https://img.shields.io/badge/EmailJS-FC0?style=flat-square&logoColor=black)                |      Contact Form      |
+|           ![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)           |       Deployment       |
 
 </div>
 
@@ -85,7 +85,7 @@ src/
 │   ├── github/             # GitHub activity & stats
 │   ├── navigation/         # Navigation components
 │   ├── ui/                 # Shared UI primitives
-│   ├── ai/                 # AI assistant components  
+│   ├── ai/                 # AI assistant components
 │   ├── Navbar.tsx          # Main navigation bar
 │   ├── Footer.tsx          # Site footer
 │   ├── ThemeProvider.tsx   # Dark/Light mode provider
@@ -114,18 +114,18 @@ src/
 
 ## 🚀 Featured Projects
 
-| Project | Description | Tech |
-|---------|-------------|------|
-| **JeevanRakshak** | Offline-first PWA for emergency guidance | Next.js, TypeScript, PWA, AI |
-| **AeroSentinel AI** | AI-powered aviation safety system | React, Python, AI/ML, TypeScript |
-| **DBGuardian AI** | Oracle DB performance analysis tool | React, TypeScript, Oracle, AI |
-| **CyberRakshak AI** | Digital fraud protection system | React, AI/ML, TypeScript, Tailwind |
-| **Interview.AI** | AI-powered interview preparation platform | Next.js, TypeScript, AI, Tailwind |
-| **CampusAI** | AI-driven student onboarding ecosystem | React, AI, TypeScript, Node.js |
-| **SkillAutofill** | Intelligent skill gap analysis system | React, AI/ML, TypeScript, Tailwind |
-| **ResumeIQ** | ATS-friendly resume builder with JD analysis | React, TypeScript, AI, Tailwind |
-| **GitVio** | Portfolio generator from GitHub profiles | Next.js, TypeScript, GitHub API |
-| **Star Weather** | Advanced weather dashboard | React, TypeScript, API, Tailwind |
+| Project             | Description                                  | Tech                               |
+| ------------------- | -------------------------------------------- | ---------------------------------- |
+| **JeevanRakshak**   | Offline-first PWA for emergency guidance     | Next.js, TypeScript, PWA, AI       |
+| **AeroSentinel AI** | AI-powered aviation safety system            | React, Python, AI/ML, TypeScript   |
+| **DBGuardian AI**   | Oracle DB performance analysis tool          | React, TypeScript, Oracle, AI      |
+| **CyberRakshak AI** | Digital fraud protection system              | React, AI/ML, TypeScript, Tailwind |
+| **Interview.AI**    | AI-powered interview preparation platform    | Next.js, TypeScript, AI, Tailwind  |
+| **CampusAI**        | AI-driven student onboarding ecosystem       | React, AI, TypeScript, Node.js     |
+| **SkillAutofill**   | Intelligent skill gap analysis system        | React, AI/ML, TypeScript, Tailwind |
+| **ResumeIQ**        | ATS-friendly resume builder with JD analysis | React, TypeScript, AI, Tailwind    |
+| **GitVio**          | Portfolio generator from GitHub profiles     | Next.js, TypeScript, GitHub API    |
+| **Star Weather**    | Advanced weather dashboard                   | React, TypeScript, API, Tailwind   |
 
 ---
 
