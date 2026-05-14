@@ -21,8 +21,8 @@ export const projectsData: ProjectCaseStudy[] = [
       'JeevanRakshak (जीवनरक्षक — "Life Saver") is a production-grade, offline-first Progressive Web App designed to provide instant, expert-verified emergency guidance when every second counts.',
     image: "/Projects/JeevanRakshak.png",
     techStack: ["Next.js", "TypeScript", "PWA", "AI"],
-    github: "https://github.com/siddhesh940/JeevanRakshak.git",
-    website: "https://jeevan-rakshak-mu.vercel.app/",
+    github: "https://github.com/Saee2803/JeevanRakshak-.git",
+    website: "https://jeevan-rakshak-neon.vercel.app/",
     problemStatement:
       "In emergency situations, people often panic and waste critical seconds searching for reliable guidance. Existing solutions require internet connectivity and often provide generic advice that doesn't apply to specific emergencies.",
     architecture:
@@ -43,69 +43,13 @@ export const projectsData: ProjectCaseStudy[] = [
     ],
   },
   {
-    slug: "aerosentinel-ai",
-    title: "AeroSentinel AI",
-    description:
-      "AI-powered aviation safety system that predicts flight risks and detects anomalies using real-time flight data. Provides risk alerts and emergency recommendations for pilots and operators.",
-    image: "/Projects/AerpGuardian.png",
-    techStack: ["React", "Python", "AI/ML", "TypeScript"],
-    github: "https://github.com/siddhesh940/AeroSentinel-AI.git",
-    website: "https://aero-sentinel-ai-3leq.vercel.app/",
-    problemStatement:
-      "Aviation safety relies heavily on manual monitoring and post-incident analysis. There's a critical need for real-time predictive systems that can identify risks before they escalate into emergencies.",
-    architecture:
-      "The frontend is built with React and TypeScript for a responsive dashboard. The backend uses Python with Flask for the AI/ML inference engine. Machine learning models trained on historical flight data perform real-time anomaly detection and risk scoring.",
-    keyFeatures: [
-      "Real-time flight risk prediction using ML models",
-      "Anomaly detection dashboard with visual alerts",
-      "Historical flight data analysis and trend identification",
-      "Emergency recommendation engine for pilots",
-      "Risk scoring with confidence intervals",
-      "Interactive data visualization with charts and maps",
-    ],
-    challenges: [
-      "Training ML models on limited publicly available aviation data",
-      "Achieving low-latency predictions for real-time monitoring",
-      "Balancing sensitivity vs specificity in anomaly detection to avoid false alarms",
-      "Designing an intuitive dashboard that pilots can understand at a glance",
-    ],
-  },
-  {
-    slug: "dbguardian-ai",
-    title: "DBGuardian AI",
-    description:
-      "AI-powered Oracle Database Performance Analysis Tool that works like a Senior DBA — identifies problematic SQL, performs root cause analysis, and provides actionable recommendations.",
-    image: "/Projects/DB_Guardian.png",
-    techStack: ["React", "TypeScript", "Oracle", "AI"],
-    github: "https://github.com/siddhesh940/DBGuardian-AI.git",
-    website: "https://db-guardian-ai.vercel.app/",
-    problemStatement:
-      "Database performance tuning requires deep expertise that many teams lack. Slow queries hidden in large systems can cause cascading performance issues, and traditional tools provide raw metrics without actionable insights.",
-    architecture:
-      "React frontend with TypeScript for the analysis dashboard. The AI engine analyzes SQL execution plans, AWR reports, and performance metrics. Uses pattern matching and ML to identify problematic queries and generate optimization recommendations.",
-    keyFeatures: [
-      "Automated SQL performance analysis and optimization suggestions",
-      "Root cause analysis for database slowdowns",
-      "AI-generated query rewrite recommendations",
-      "Visual execution plan analysis",
-      "Performance trend monitoring and alerting",
-      "One-click report generation for DBAs",
-    ],
-    challenges: [
-      "Parsing and understanding complex Oracle execution plans",
-      "Building a knowledge base of SQL optimization patterns",
-      "Handling diverse database configurations and versions",
-      "Generating recommendations that are safe to apply in production",
-    ],
-  },
-  {
     slug: "cyberrakshak-ai",
     title: "CyberRakshak AI",
     description:
       "Personal Protection System against Social Media Scams and Digital Fraud. Detects and prevents cyber threats using AI-driven analysis.",
     image: "/Projects/CyberRakshak AI.png",
     techStack: ["React", "AI/ML", "TypeScript", "Tailwind"],
-    github: "https://github.com/siddhesh940/CyberRakshak-AI-.git",
+    github: "https://github.com/Saee2803/CyberRakshak-AI-.git",
     website: "https://cyber-rakshak-ai.vercel.app/",
     problemStatement:
       "Online scams and digital fraud are increasingly sophisticated, targeting vulnerable users through social media, phishing emails, and fake websites. Most users lack the tools to identify these threats in real-time.",
@@ -127,42 +71,14 @@ export const projectsData: ProjectCaseStudy[] = [
     ],
   },
   {
-    slug: "interview-ai",
-    title: "Interview.AI",
-    description:
-      "AI-powered interview preparation platform with real-time mock interviews, intelligent question generation, resume builder, performance analytics, and company-wise preparation tools.",
-    image: "/Projects/Interview.AI.png",
-    techStack: ["Next.js", "TypeScript", "AI", "Tailwind"],
-    github: "https://github.com/siddhesh940/Interview.AI.git",
-    website: "https://interview-ai-ruddy.vercel.app/",
-    problemStatement:
-      "Students struggle with interview preparation due to lack of structured practice opportunities and personalized feedback. Coaching sessions are expensive and generic mock interview platforms don't adapt to individual skill levels.",
-    architecture:
-      "Built with Next.js 15 and TypeScript for the frontend, using OpenAI GPT-4 for question generation and response evaluation. The system uses WebSocket for real-time interview sessions and PostgreSQL with Prisma ORM for data persistence.",
-    keyFeatures: [
-      "AI-powered real-time mock interviews with adaptive difficulty",
-      "Intelligent question generation based on role and company",
-      "Resume analysis with ATS compatibility scoring",
-      "Performance analytics dashboard with progress tracking",
-      "Company-specific interview preparation modules",
-      "Speech-to-text for verbal interview practice",
-    ],
-    challenges: [
-      "Fine-tuning AI prompts for relevant and appropriately difficult questions",
-      "Implementing low-latency WebSocket communication for smooth interviews",
-      "Building an accurate resume parser that handles diverse formats",
-      "Creating meaningful analytics from subjective interview performance data",
-    ],
-  },
-  {
     slug: "campus-ai",
     title: "CampusAI",
     description:
       "Transforms the traditional student onboarding process into a seamless, AI-driven digital ecosystem delivering structured, personalized, and real-time guidance from admission to integration.",
     image: "/Projects/Campus AI.png",
     techStack: ["React", "AI", "TypeScript", "Node.js"],
-    github: "https://github.com/siddhesh940/CampusAI.git",
-    website: "https://campusai-livid.vercel.app/",
+    github: "https://github.com/Saee2803/CampusAI.git",
+    website: "https://campus-ai-alpha.vercel.app/",
     problemStatement:
       "College onboarding is fragmented — students navigate between multiple portals, WhatsApp groups, and orientation sessions. Important information gets lost, and the experience varies wildly between departments.",
     architecture:
@@ -189,8 +105,8 @@ export const projectsData: ProjectCaseStudy[] = [
       "An intelligent system that analyzes job descriptions and user profiles to provide skill gap analysis, personalized learning roadmaps, resume improvements, and more.",
     image: "/Projects/SkillAutofill.png",
     techStack: ["React", "AI/ML", "TypeScript", "Tailwind"],
-    github: "https://github.com/siddhesh940/Skill_Autofill_System.git",
-    website: "https://skill-autofill-system.vercel.app/",
+    github: "https://github.com/Saee2803/skill-autofill.git",
+    website: "https://skill-autofill.vercel.app/",
     problemStatement:
       "Job seekers often don't know which skills they're missing for their target roles. The gap between a candidate's profile and job requirements is usually assessed manually, leading to missed opportunities and unfocused skill development.",
     architecture:
@@ -217,8 +133,8 @@ export const projectsData: ProjectCaseStudy[] = [
       "Create ATS-friendly resumes with intelligent JD Analysis. Simplifies the process of building professional, optimized resumes in minutes.",
     image: "/Projects/ResumeIQ.png",
     techStack: ["React", "TypeScript", "AI", "Tailwind"],
-    github: "https://github.com/siddhesh940/resumeIQ.git",
-    website: "https://resume-iq-weld.vercel.app/",
+    github: "https://github.com/Saee2803/RESUMEIQQ",
+    website: "https://resumeiqq.vercel.app/",
     problemStatement:
       "Most resumes get rejected by Applicant Tracking Systems before a human ever reads them. Candidates don't understand ATS formatting requirements and fail to optimize their resumes for specific job descriptions.",
     architecture:
@@ -245,8 +161,8 @@ export const projectsData: ProjectCaseStudy[] = [
       "Create beautiful portfolio websites directly from your GitHub profile. Instantly generate a polished developer portfolio.",
     image: "/Projects/GitVio.png",
     techStack: ["Next.js", "TypeScript", "GitHub API", "Tailwind"],
-    github: "https://github.com/siddhesh940/GitVio.git",
-    website: "https://git-vio-npib.vercel.app/",
+    github: "https://github.com/Saee2803/GitVio",
+    website: "https://gitvio.vercel.app/",
     problemStatement:
       "Developers need portfolio websites but building one from scratch takes time away from actual coding. GitHub profiles contain all the necessary information but aren't visually appealing or shareable as a professional portfolio.",
     architecture:
@@ -273,8 +189,8 @@ export const projectsData: ProjectCaseStudy[] = [
       "Advanced weather website where users can view current conditions, forecasts, air quality, weather maps, and more — built for a seamless, responsive experience.",
     image: "/Projects/Star Weather Performance.png",
     techStack: ["React", "TypeScript", "API", "Tailwind"],
-    github: "https://github.com/siddhesh940/Star_WeatherPerformance.git",
-    website: "https://star-weather-performance-52tu.vercel.app/",
+    github: "https://github.com/Saee2803/Star_WeatherPerformance",
+    website: "https://starweatherperformance.vercel.app",
     problemStatement:
       "Existing weather apps are either cluttered with ads and unnecessary features or lack the detailed data that weather enthusiasts need. There's a need for a clean, fast, and comprehensive weather dashboard.",
     architecture:
@@ -292,6 +208,90 @@ export const projectsData: ProjectCaseStudy[] = [
       "Optimizing render performance for real-time data updates",
       "Creating smooth and informative weather visualizations",
       "Handling geolocation permissions and fallbacks gracefully",
+    ],
+  },
+  {
+    slug: "health-fraud-mlchain",
+    title: "HealthFraud MLChain",
+    description:
+      "ML-powered fraud detection system for healthcare. Uses machine learning to identify fraudulent claims and suspicious patterns in healthcare data.",
+    image: "/Projects/HealthMLChain.png",
+    techStack: ["Python", "Machine Learning", "Flask", "React"],
+    github: "https://github.com/Saee2803/HealthFraudMLChain.git",
+    website: "https://healthfraudmlchain.onrender.com",
+    problemStatement:
+      "Healthcare fraud costs billions annually and is difficult to detect manually. Machine learning models can identify suspicious patterns and anomalies in claims that indicate fraudulent activity.",
+    architecture:
+      "Python backend with ML models for fraud detection, React frontend for dashboard visualization. Flask API handles data processing and model inference.",
+    keyFeatures: [
+      "Real-time fraud detection and alerts",
+      "Pattern recognition for suspicious claims",
+      "Anomaly detection algorithms",
+      "Interactive fraud analytics dashboard",
+      "Risk scoring for claims",
+      "Historical fraud tracking",
+    ],
+    challenges: [
+      "Handling imbalanced fraud vs legitimate claim data",
+      "Feature engineering for healthcare-specific fraud patterns",
+      "Ensuring model predictions are explainable to stakeholders",
+      "Maintaining low false positive rates to avoid blocking legitimate claims",
+    ],
+  },
+  {
+    slug: "nlp-smart-assistant",
+    title: "NLP Smart Assistant",
+    description:
+      "Intelligent conversational assistant powered by Natural Language Processing. Understands and responds to user queries with contextual intelligence.",
+    image: "/Projects/NLP_assistant.png",
+    techStack: ["Python", "NLP", "Flask", "React"],
+    github: "https://github.com/Saee2803/NLP_Smart_Assistant.git",
+    website: "https://nlp-backend-a9w9.onrender.com",
+    problemStatement:
+      "Building conversational AI that truly understands context and nuance is challenging. Most chatbots provide generic responses without understanding user intent.",
+    architecture:
+      "Python backend using transformers and NLP libraries for understanding user intent. Flask API exposes the conversation engine. React frontend provides the user interface.",
+    keyFeatures: [
+      "Natural language understanding with context awareness",
+      "Intent recognition and entity extraction",
+      "Multi-turn conversation support",
+      "Learning from user interactions",
+      "Contextual responses based on conversation history",
+      "Support for multiple languages",
+    ],
+    challenges: [
+      "Understanding context and handling ambiguous queries",
+      "Training models on diverse conversation data",
+      "Balancing accuracy with response latency",
+      "Handling edge cases and unexpected inputs gracefully",
+    ],
+  },
+  {
+    slug: "connectme",
+    title: "ConnectMe",
+    description:
+      "Social networking platform for meaningful connections. Built for users to find, connect, and collaborate with like-minded individuals.",
+    image: "/Projects/Connent_me.png",
+    techStack: ["React", "Node.js", "MongoDB", "WebSockets"],
+    github: "https://github.com/Saee2803/ConnectMe",
+    website: "https://connectme-mu.vercel.app/",
+    problemStatement:
+      "Existing social platforms are dominated by algorithms that prioritize engagement over meaningful connections. Users struggle to find genuine communities of like-minded people.",
+    architecture:
+      "React frontend with Node.js backend using MongoDB for data persistence. WebSockets enable real-time messaging and notifications. RESTful API handles core business logic.",
+    keyFeatures: [
+      "User profile creation and discovery",
+      "Interest-based connection recommendations",
+      "Real-time messaging with WebSockets",
+      "Community creation and management",
+      "Activity feeds and notifications",
+      "Connection request and approval system",
+    ],
+    challenges: [
+      "Building algorithms for meaningful recommendation without complex data collection",
+      "Handling real-time messaging at scale with WebSockets",
+      "Preventing spam and maintaining community quality",
+      "Ensuring user privacy and data security",
     ],
   },
 ];

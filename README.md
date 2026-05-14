@@ -1,11 +1,11 @@
 <div align="center">
 
-# ⚡ Siddhesh Patil — Developer Portfolio
+# ⚡ Saee Bhanuskar — Developer Portfolio
 
 ### A modern, interactive, and fully responsive developer portfolio built with cutting-edge web technologies.
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-sid--portfolio--umber.vercel.app-6366f1?style=for-the-badge&logoColor=white)](https://sid-portfolio-umber.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-siddhesh940-181717?style=for-the-badge&logo=github)](https://github.com/siddhesh940)
+[![GitHub](https://img.shields.io/badge/GitHub-Saee2803-181717?style=for-the-badge&logo=github)](https://github.com/Saee2803)
 [![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -140,7 +140,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/siddhesh940/Sid_Portfolio.git
+git clone https://github.com/Saee2803/Sid_Portfolio.git
 
 # Navigate to the project
 cd Sid_Portfolio
@@ -173,8 +173,8 @@ This portfolio is deployed on **[Vercel](https://vercel.com/)** with automatic d
 
 ## 📬 Contact
 
-- **Email:** [siddheshpatil940@gmail.com](mailto:siddheshpatil940@gmail.com)
-- **GitHub:** [@siddhesh940](https://github.com/siddhesh940)
+- **Email:** [saeebhanuskar@gmail.com](mailto:saeebhanuskar@gmail.com)
+- **GitHub:** [@Saee2803](https://github.com/Saee2803)
 - **Portfolio:** [sid-portfolio-umber.vercel.app](https://sid-portfolio-umber.vercel.app/)
 
 ---
@@ -183,6 +183,6 @@ This portfolio is deployed on **[Vercel](https://vercel.com/)** with automatic d
 
 ### ⭐ If you found this project useful, please consider giving it a star!
 
-Made with ❤️ by **Siddhesh Patil**
+Made with ❤️ by **Saee Bhanuskar**
 
 </div>

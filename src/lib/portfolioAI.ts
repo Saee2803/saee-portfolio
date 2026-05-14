@@ -2,15 +2,15 @@
 // This provides all the context the chatbot needs to answer questions
 
 export const portfolioContext = {
-  name: "Siddhesh Patil",
+  name: "Saee Bhanuskar",
   title: "Full-Stack Developer",
-  email: "patilsiddhesh2810@gmail.com",
-  github: "https://github.com/siddhesh940",
-  linkedin: "https://linkedin.com/in/siddhesh-patil-it",
-  leetcode: "https://leetcode.com/u/Siddhesh_Patil_/",
+  email: "saeebhanuskar@gmail.com",
+  github: "https://github.com/Saee2803",
+  linkedin: "https://linkedin.com/in/saee-bhanuskar",
+  leetcode: "https://leetcode.com/u/Saee2803/",
 
   about:
-    "Siddhesh Patil is a passionate full-stack developer specializing in modern web development, AI, and data science. He builds production-grade applications using React, Next.js, TypeScript, and AI/ML technologies.",
+    "Saee Bhanuskar is a passionate Full-Stack Developer specializing in Python and Flask. He builds scalable web applications and enjoys solving real-world problems through technology.",
 
   skills: [
     "React",
@@ -39,20 +39,6 @@ export const portfolioContext = {
       link: "https://jeevan-rakshak-mu.vercel.app/",
     },
     {
-      name: "AeroSentinel AI",
-      description:
-        "AI-powered aviation safety system that predicts flight risks and detects anomalies using real-time flight data.",
-      tech: ["React", "Python", "AI/ML", "TypeScript"],
-      link: "https://aero-sentinel-ai-3leq.vercel.app/",
-    },
-    {
-      name: "DBGuardian AI",
-      description:
-        "AI-powered Oracle Database Performance Analysis Tool that works like a Senior DBA — identifies problematic SQL and provides actionable recommendations.",
-      tech: ["React", "TypeScript", "Oracle", "AI"],
-      link: "https://db-guardian-ai.vercel.app/",
-    },
-    {
       name: "CyberRakshak AI",
       description:
         "Personal Protection System against Social Media Scams and Digital Fraud using AI-driven analysis.",
@@ -71,35 +57,56 @@ export const portfolioContext = {
       description:
         "AI-driven digital ecosystem for student onboarding — delivering structured, personalized, and real-time guidance from admission to integration.",
       tech: ["React", "AI", "TypeScript", "Node.js"],
-      link: "https://campusai-livid.vercel.app/",
+      link: "https://campus-ai-alpha.vercel.app/",
     },
     {
       name: "SkillAutofill",
       description:
         "Intelligent system that analyzes job descriptions and user profiles to provide skill gap analysis and personalized learning roadmaps.",
       tech: ["React", "AI/ML", "TypeScript", "Tailwind"],
-      link: "https://skill-autofill-system.vercel.app/",
+      link: "https://skill-autofill.vercel.app/",
     },
     {
       name: "ResumeIQ",
       description:
         "Create ATS-friendly resumes with intelligent JD Analysis in minutes.",
       tech: ["React", "TypeScript", "AI", "Tailwind"],
-      link: "https://resume-iq-weld.vercel.app/",
+      link: "https://resumeiqq.vercel.app/",
     },
     {
       name: "GitVio",
       description:
         "Create beautiful portfolio websites directly from your GitHub profile.",
       tech: ["Next.js", "TypeScript", "GitHub API", "Tailwind"],
-      link: "https://git-vio-npib.vercel.app/",
+      link: "https://gitvio.vercel.app/",
     },
     {
       name: "Star Weather Performance",
       description:
         "Advanced weather website with current conditions, forecasts, air quality, and weather maps.",
       tech: ["React", "TypeScript", "API", "Tailwind"],
-      link: "https://star-weather-performance-52tu.vercel.app/",
+      link: "https://starweatherperformance.vercel.app",
+    },
+    {
+      name: "HealthFraud MLChain",
+      description:
+        "ML-powered fraud detection system for healthcare that identifies fraudulent claims and suspicious patterns.",
+      tech: ["Python", "Machine Learning", "Flask", "React"],
+      link: "https://healthfraudmlchain.onrender.com",
+    },
+    {
+      name: "NLP Smart Assistant",
+      description:
+        "Intelligent conversational assistant powered by Natural Language Processing with contextual intelligence.",
+      tech: ["Python", "NLP", "Flask", "React"],
+      link: "https://nlp-backend-a9w9.onrender.com",
+    },
+    {
+      name: "ConnectMe",
+      description:
+        "Social networking platform for meaningful connections and collaboration with like-minded individuals.",
+      tech: ["React", "Node.js", "MongoDB", "WebSockets"],
+      link: "https://connectme-mu.vercel.app/",
     },
   ],
 
@@ -114,7 +121,7 @@ export const portfolioContext = {
       title:
         "Building an AI-Powered Interview Preparation Platform — Interview.ai",
       platform: "Medium",
-      link: "https://medium.com/@patilsiddhesh2810/building-an-ai-powered-interview-preparation-platform-interview-ai-a9dab9cdb082",
+      link: "https://medium.com/@saeebhanuskar/building-an-ai-powered-interview-preparation-platform-interview-ai-a9dab9cdb082",
     },
   ],
 };
@@ -131,28 +138,28 @@ export function generateChatResponse(query: string): ChatResponse {
   // Greetings
   if (/^(hi|hello|hey|hola|namaste|sup|yo)\b/.test(q)) {
     return {
-      text: `Hello! 👋 I'm Siddhesh's portfolio assistant. I can tell you about his projects, skills, experience, and more. What would you like to know?`,
+      text: `Hello! 👋 I'm Saee's portfolio assistant. I can tell you about my projects, skills, experience, and more. What would you like to know?`,
     };
   }
 
   // Who is / about
   if (/who\s*(is|are)|about|tell me about|introduce/.test(q)) {
     return {
-      text: `${ctx.about}\n\nHe has built ${ctx.projects.length}+ production-grade projects using technologies like React, Next.js, TypeScript, Python, and AI/ML.`,
+      text: `${ctx.about}\n\nI have built ${ctx.projects.length}+ production-grade projects using technologies like Python, Flask, React, TypeScript, and more.`,
     };
   }
 
   // Contact
   if (/contact|reach|email|mail|connect|hire|hiring/.test(q)) {
     return {
-      text: `You can reach Siddhesh through:\n\n📧 Email: ${ctx.email}\n🔗 LinkedIn: ${ctx.linkedin}\n💻 GitHub: ${ctx.github}\n\nOr use the Contact section on this portfolio!`,
+      text: `You can reach me through:\n\n📧 Email: ${ctx.email}\n🔗 LinkedIn: ${ctx.linkedin}\n💻 GitHub: ${ctx.github}\n\nOr use the Contact section on this portfolio!`,
     };
   }
 
   // Skills / technologies
   if (/skill|tech|technolog|stack|language|framework|tool|know/.test(q)) {
     return {
-      text: `Siddhesh is proficient in:\n\n${ctx.skills.map((s) => `• ${s}`).join("\n")}\n\nHe specializes in full-stack development with a focus on AI-powered applications.`,
+      text: `My proficiency:\n\n${ctx.skills.map((s) => `• ${s}`).join("\n")}\n\nI specialize in Python, Flask, and full-stack web development.`,
     };
   }
 
@@ -169,7 +176,7 @@ export function generateChatResponse(query: string): ChatResponse {
       .map((p) => `🤖 **${p.name}** — ${p.description}`)
       .join("\n\n");
     return {
-      text: `Siddhesh has built ${aiProjects.length} AI-powered projects:\n\n${list}`,
+      text: `I have built ${aiProjects.length} AI-powered projects:\n\n${list}`,
     };
   }
 
@@ -192,7 +199,7 @@ export function generateChatResponse(query: string): ChatResponse {
       .map((p) => `• **${p.name}** — ${p.description.slice(0, 80)}...`)
       .join("\n");
     return {
-      text: `Siddhesh has built ${ctx.projects.length} projects:\n\n${list}\n\nAsk me about any specific project for more details!`,
+      text: `I have built ${ctx.projects.length} projects:\n\n${list}\n\nAsk me about any specific project for more details!`,
     };
   }
 
@@ -202,47 +209,47 @@ export function generateChatResponse(query: string): ChatResponse {
       .map((b) => `📝 ${b.title} (${b.platform})`)
       .join("\n");
     return {
-      text: `Siddhesh has published technical articles:\n\n${list}\n\nCheck out the Blogs section for full reads!`,
+      text: `I have published technical articles:\n\n${list}\n\nCheck out the Blogs section for full reads!`,
     };
   }
 
   // GitHub
   if (/github|git|repo|repository|open source|contribution/.test(q)) {
     return {
-      text: `Check out Siddhesh's GitHub profile: ${ctx.github}\n\nHe actively contributes to open source and has ${ctx.projects.length}+ public repositories covering AI, web development, and more.`,
+      text: `Check out my GitHub profile: ${ctx.github}\n\nI actively contribute to open source and have ${ctx.projects.length}+ public repositories covering web development and more.`,
     };
   }
 
   // Resume
   if (/resume|cv|download/.test(q)) {
     return {
-      text: `You can view and download Siddhesh's resume from the Resume section on this portfolio. It includes his education, experience, projects, and skills.`,
+      text: `You can view and download my resume from the Resume section on this portfolio. It includes my education, experience, projects, and skills.`,
     };
   }
 
   // Education
   if (/education|study|university|college|degree|school/.test(q)) {
     return {
-      text: `You can find details about Siddhesh's education in the Education section of this portfolio. He has a strong academic background in Computer Science and Engineering.`,
+      text: `You can find details about my education in the Education section of this portfolio. I have a strong academic background in Computer Science and Engineering.`,
     };
   }
 
   // Experience
   if (/experience|work|job|internship|company|career/.test(q)) {
     return {
-      text: `Check out the Experience section on this portfolio for details about Siddhesh's professional experience, internships, and career journey.`,
+      text: `Check out the Experience section on this portfolio for details about my professional experience, internships, and career journey.`,
     };
   }
 
   // Thank you
   if (/thank|thanks|thx/.test(q)) {
     return {
-      text: `You're welcome! 😊 Feel free to ask anything else about Siddhesh's work and skills.`,
+      text: `You're welcome! 😊 Feel free to ask anything else about my work and skills.`,
     };
   }
 
   // Default fallback
   return {
-    text: `I can help you learn about Siddhesh's:\n\n• 🚀 Projects (10+ built)\n• 💻 Technical Skills\n• 📝 Blog Articles\n• 📧 Contact Information\n• 🎓 Education\n• 💼 Experience\n• 📄 Resume\n\nWhat would you like to know?`,
+    text: `I can help you learn about me:\n\n• 🚀 Projects (10+ built)\n• 💻 Technical Skills\n• 📝 Blog Articles\n• 📧 Contact Information\n• 🎓 Education\n• 💼 Experience\n• 📄 Resume\n\nWhat would you like to know?`,
   };
 }

@@ -14,7 +14,7 @@ Mauli Infotech (OPC) Pvt. Ltd. — Intern (SQL \& Performance Analysis)
 
 &nbsp;     •	Deployment - [https://db-guardian-ai.vercel.app/](https://db-guardian-ai.vercel.app/)  
 
-&nbsp;     • GitHub Repo - [https://github.com/siddhesh940/DBGuardian-AI.git](https://github.com/siddhesh940/DBGuardian-AI.git)
+&nbsp;     • GitHub Repo - [https://github.com/Saee2803/DBGuardian-AI.git](https://github.com/Saee2803/DBGuardian-AI.git)
 
 
 
@@ -26,7 +26,7 @@ PRODIGY INFOTECH (Web Development Intern)
 
 &nbsp;     •	Developed user-interactive modules such as landing pages, dynamic web apps, and UI components as per task requirements.
 
-&nbsp;     •	Repository of completed tasks: [Prodigy Task Link](https://github.com/siddhesh940/PRODIGY_WD_Tasks.git)
+&nbsp;     •	Repository of completed tasks: [Prodigy Task Link](https://github.com/Saee2803/PRODIGY_WD_Tasks.git)
 
 
 

@@ -32,7 +32,7 @@ const LANGUAGE_COLORS: Record<string, string> = {
   "Jupyter Notebook": "#DA5B0B",
 };
 
-const GITHUB_USERNAME = "siddhesh940";
+const GITHUB_USERNAME = "Saee2803";
 
 export default function GitHubStats() {
   const [stats, setStats] = useState<GitHubStatsData | null>(null);
@@ -44,15 +44,31 @@ export default function GitHubStats() {
         // Fetch user profile
         const userRes = await fetch(
           `https://api.github.com/users/${GITHUB_USERNAME}`,
+          {
+            headers: {
+              "Accept": "application/vnd.github.v3+json",
+            },
+            cache: "no-store",
+          }
         );
-        if (!userRes.ok) throw new Error("User fetch failed");
+        if (!userRes.ok) {
+          throw new Error(`User fetch failed: ${userRes.status}`);
+        }
         const userData = await userRes.json();
 
         // Fetch repos (up to 100)
         const reposRes = await fetch(
           `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`,
+          {
+            headers: {
+              "Accept": "application/vnd.github.v3+json",
+            },
+            cache: "no-store",
+          }
         );
-        if (!reposRes.ok) throw new Error("Repos fetch failed");
+        if (!reposRes.ok) {
+          throw new Error(`Repos fetch failed: ${reposRes.status}`);
+        }
         const reposData = await reposRes.json();
 
         if (!Array.isArray(reposData)) throw new Error("Invalid repos data");
@@ -89,17 +105,12 @@ export default function GitHubStats() {
         });
       } catch (err) {
         console.error("Failed to fetch GitHub stats:", err);
-        // Fallback data
+        // Fallback data - shows empty state if API fails
         setStats({
-          publicRepos: 25,
-          followers: 10,
-          totalStars: 15,
-          topLanguages: [
-            { name: "Python", count: 10, color: "#3572A5" },
-            { name: "TypeScript", count: 5, color: "#3178c6" },
-            { name: "JavaScript", count: 4, color: "#f1e05a" },
-            { name: "Java", count: 3, color: "#b07219" },
-          ],
+          publicRepos: 0,
+          followers: 0,
+          totalStars: 0,
+          topLanguages: [],
         });
       } finally {
         setLoading(false);

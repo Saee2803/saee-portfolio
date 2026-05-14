@@ -30,7 +30,7 @@ export default function HeroSection() {
             >
               <span className="text-white">Hi all, I&apos;m </span>
               <span className="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
-                Siddhesh
+                Saee
               </span>{" "}
               <motion.span
                 className="inline-block"
@@ -52,32 +52,36 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <p>
-                Welcome to my portfolio! I am a passionate Full-Stack Developer
-                with a strong foundation in modern web development, specializing
-                in building dynamic, intuitive, and scalable web applications
-                with a focus on clean design and efficient functionality.
+             <p>
+                Welcome to my portfolio! I am a passionate Software Developer
+                with hands-on experience in building web applications and AI-based
+                projects using Python, Flask, JavaScript, and MongoDB. I enjoy
+                developing practical and user-friendly solutions that combine clean
+                design with efficient functionality.
               </p>
+
               <p>
-                I enjoy transforming innovative ideas into practical digital
-                solutions through hands-on project experience. With a growing
-                interest in Artificial Intelligence and Data Science, I aim to
-                leverage technology to solve real-world problems and contribute
-                to impactful, technology-driven projects.
+                 My interests include web development, artificial intelligence, and
+                 data-driven applications. Through real-world projects such as
+                 healthcare fraud detection systems, AI-powered student assistance
+                 platforms, and resume analysis tools, I have gained experience in
+                 frontend development, backend integration, database management, and
+                 deployment.
               </p>
+
               <p>
-                Alongside developing personal projects, I actively explore
-                opportunities to collaborate with developers and contribute to
-                open-source initiatives. I am continuously seeking opportunities
-                to learn, improve, and expand my technical expertise through
-                challenging projects, workshops, and advanced learning
-                experiences.
+                 I am continuously exploring new technologies, improving my
+                development skills, and working on projects that solve real-world
+                problems through technology. I enjoy learning through hands-on
+                experience and collaborating on innovative ideas that create
+                meaningful impact.
               </p>
+
               <p>
-                If you are interested in collaborating or discussing ideas
-                related to web development and technology, feel free to connect
-                with me.
-              </p>
+                 If you are interested in collaborating or discussing opportunities
+                 related to software development, web technologies, or AI-based
+                 applications, feel free to connect with me.
+               </p>
             </motion.div>
 
             {/* CTA Buttons */}

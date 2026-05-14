@@ -13,17 +13,32 @@ import AchievementCard, {
 
 const achievements: AchievementData[] = [
   {
-    title: "Finalist – InnovGenius Ideathon 2026 (ACM TCET x TCS)",
+    title: "1st Rank in Fourth Year BE – SGPA 10.0",
     description: [
-      "Selected among 700+ registrations and competed in the Final Round; built and deployed CampusAI, an industry-style onboarding automation system with secure role-based access and scalable SaaS architecture.",
-      "CampusAI transforms the traditionally fragmented student onboarding process into a seamless, AI-driven digital ecosystem delivering structured, personalized, and real-time guidance from admission to campus integration.",
+      "Secured 1st Rank in Fourth Year BE with an outstanding SGPA of 10.0, demonstrating strong academic consistency and technical excellence throughout the program.",
     ],
     icon: FaTrophy,
     iconColor: "bg-amber-500/20 text-amber-500",
-    deployment: "https://campusai-livid.vercel.app/",
-    github: "https://github.com/siddhesh940/CampusAI.git",
-    certificate:
-      "https://drive.google.com/file/d/19_aXe846bxuTD6QBeuL6ude6sPX7PO02/view?usp=sharing",
+  },
+  {
+    title: "Hack To Crack 2.0 – ViMEET (National-Level Hackathon)",
+    description: [
+      "Participated in Hack To Crack 2.0 – ViMEET, a National-Level Hackathon, where I designed and prototyped an innovative Telemedicine Platform aimed at improving healthcare accessibility for rural communities.",
+      "The platform enables online consultation and digital healthcare services, addressing real-world healthcare challenges with practical technology solutions.",
+    ],
+    icon: FaTrophy,
+    iconColor: "bg-blue-500/20 text-blue-500",
+    certificate: "https://drive.google.com/file/d/1oA0B2LgaAYRHTCBB-DxBFgdCqqbWyPuC/view",
+  },
+  {
+    title: "Tech Aspira 2025 – Project Competition",
+    description: [
+      "Presented the Telemedicine Platform Project at Tech Aspira 2025, a project competition organized by the Department of Electronics & Computer Science, PHCET.",
+      "Showcased practical problem-solving skills and real-world application development capabilities in front of industry professionals and academic experts.",
+    ],
+    icon: FaTrophy,
+    iconColor: "bg-green-500/20 text-green-500",
+    certificate: "https://drive.google.com/file/d/1WLUPGvqqLAlpYsmF94QSIE9_jIwff52B/view",
   },
 ];
 

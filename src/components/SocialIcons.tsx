@@ -14,37 +14,32 @@ const socialIcons: SocialIcon[] = [
   {
     name: "GitHub",
     src: "/icons_Svg_Png/github.png",
-    href: "https://github.com/siddhesh940",
+    href: "https://github.com/Saee2803",
     alt: "GitHub",
   },
   {
     name: "LinkedIn",
     src: "/icons_Svg_Png/linkedin.svg",
-    href: "https://www.linkedin.com/in/siddhesh-patil-268b96311/",
+    href: "https://www.linkedin.com/in/saee-bhanuskar-8a80ba314/",
     alt: "LinkedIn",
   },
   {
     name: "Email",
     src: "/icons_Svg_Png/email.svg",
-    href: "mailto:patilsiddhesh2810@gmail.com",
+    href: "mailto:saeebhanuskar@gmail.com",
     alt: "Email",
   },
-  {
-    name: "Facebook",
-    src: "/icons_Svg_Png/facebook.svg",
-    href: "https://www.facebook.com/people/Siddhesh-Patil/pfbid02oA8tjFLzmNkgHRa1MBNKhJfy5CwqYcnpmbKWTNkvTbPSnt1iT1h4qVY2JTv1F9Wrl/",
-    alt: "Facebook",
-  },
+ 
   {
     name: "Instagram",
     src: "/icons_Svg_Png/instagram.svg",
-    href: "https://www.instagram.com/siddhu_patil_30",
+    href: "https://www.instagram.com/_.aboli._28/",
     alt: "Instagram",
   },
   {
     name: "Vercel",
     src: "/icons_Svg_Png/vercel.svg",
-    href: "https://vercel.com/siddhesh-pravin-patil-s-projects",
+    href: "https://vercel.com/saee-bhanuskar",
     alt: "Vercel",
   },
 ];

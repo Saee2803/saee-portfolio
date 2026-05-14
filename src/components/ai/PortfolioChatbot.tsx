@@ -18,7 +18,7 @@ export default function PortfolioChatbot() {
     {
       id: 0,
       role: "assistant",
-      text: "Hi! 👋 I'm Siddhesh's portfolio assistant. Ask me anything about his projects, skills, or experience!",
+      text: "Hi! 👋 I'm Saee's portfolio assistant. Ask me anything about my projects, skills, or experience!",
     },
   ]);
   const [typing, setTyping] = useState(false);

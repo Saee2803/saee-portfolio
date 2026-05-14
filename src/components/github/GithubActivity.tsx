@@ -60,7 +60,7 @@ export default function GithubActivity() {
 
           <div className="overflow-x-auto flex justify-center">
             <GitHubCalendar
-              username="siddhesh940"
+              username="Saee2803"
               colorScheme="dark"
               blockSize={14}
               blockMargin={4}
@@ -78,7 +78,7 @@ export default function GithubActivity() {
             transition={{ delay: 0.4, duration: 0.5 }}
           >
             <a
-              href="https://github.com/siddhesh940"
+              href="https://github.com/Saee2803"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg

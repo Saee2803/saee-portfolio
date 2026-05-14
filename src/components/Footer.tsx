@@ -21,20 +21,20 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { icon: FiGithub, href: "https://github.com/siddhesh940", label: "GitHub" },
+  { icon: FiGithub, href: "https://github.com/Saee2803", label: "GitHub" },
   {
     icon: FiLinkedin,
-    href: "https://linkedin.com/in/siddhesh-patil-it",
+    href: "https://linkedin.com/in/saee-bhanuskar",
     label: "LinkedIn",
   },
   {
     icon: SiLeetcode,
-    href: "https://leetcode.com/u/Siddhesh_Patil_/",
+    href: "https://leetcode.com/u/Saee2803/",
     label: "LeetCode",
   },
   {
     icon: FiMail,
-    href: "mailto:patilsiddhesh2810@gmail.com",
+    href: "mailto:saeebhanuskar@gmail.com",
     label: "Email",
   },
 ];
@@ -51,7 +51,7 @@ export default function Footer() {
                 <span className="text-light-text dark:text-white">&lt;</span>
                 <span className="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent font-extrabold italic">
                   {" "}
-                  Siddhesh Patil{" "}
+                  Saee Bhanuskar{" "}
                 </span>
                 <span className="text-light-text dark:text-white">/&gt;</span>
               </span>
@@ -113,7 +113,7 @@ export default function Footer() {
               ))}
             </div>
             <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-              patilsiddhesh2810@gmail.com
+              saeebhanuskar@gmail.com
             </p>
           </div>
         </div>
@@ -121,12 +121,12 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1">
-            © {new Date().getFullYear()} Siddhesh Patil. Built with{" "}
+            © {new Date().getFullYear()} Saee Bhanuskar. Built with{" "}
             <FiHeart className="w-3.5 h-3.5 text-red-500" /> using Next.js &
             Tailwind CSS.
           </p>
           <p className="text-xs text-gray-400 dark:text-gray-500">
-            Designed & Developed by Siddhesh Patil
+            Designed & Developed by Saee Bhanuskar
           </p>
         </div>
       </div>

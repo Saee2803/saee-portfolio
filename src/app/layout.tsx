@@ -18,11 +18,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Siddhesh Patil | Developer Portfolio",
+  title: "Saee Bhanuskar | Developer Portfolio",
   description:
     "Full-stack developer specializing in modern web development, AI, and data science. Explore my projects, skills, and journey.",
   keywords: [
-    "Siddhesh Patil",
+    "Saee Bhanuskar",
     "Developer",
     "Portfolio",
     "Full Stack",

@@ -1,5 +1,3 @@
-import emailjs from "emailjs-com";
-
 interface EmailParams {
   name: string;
   email: string;
@@ -8,31 +6,24 @@ interface EmailParams {
 }
 
 export async function sendEmail(params: EmailParams): Promise<boolean> {
-  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-  if (!serviceId || !templateId || !publicKey) {
-    console.error("EmailJS environment variables are not configured.");
-    return false;
-  }
-
   try {
-    const result = await emailjs.send(
-      serviceId,
-      templateId,
-      {
-        from_name: params.name,
-        from_email: params.email,
-        subject: params.subject,
-        message: params.message,
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-      publicKey
-    );
+      body: JSON.stringify(params),
+    });
 
-    return result.status === 200;
+    if (!response.ok) {
+      const error = await response.json();
+      console.error("Email send error:", error);
+      return false;
+    }
+
+    return true;
   } catch (error) {
-    console.error("EmailJS Error:", error);
+    console.error("Failed to send email:", error);
     return false;
   }
 }

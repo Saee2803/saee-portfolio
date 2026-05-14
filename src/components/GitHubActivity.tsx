@@ -32,7 +32,7 @@ export default function GitHubActivity() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <GitHubCalendar
-            username="siddhesh940"
+            username="Saee2803"
             colorScheme="dark"
             blockSize={13}
             blockMargin={4}
