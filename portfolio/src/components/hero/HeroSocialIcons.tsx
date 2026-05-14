@@ -7,32 +7,32 @@ import { SiInstagram, SiMedium, SiVercel } from "react-icons/si";
 const socials = [
   {
     icon: FiGithub,
-    href: "https://github.com/siddhesh940",
+    href: "https://github.com/Saee2803",
     label: "GitHub",
   },
   {
     icon: FiLinkedin,
-    href: "https://www.linkedin.com/in/siddhesh-patil-268b96311/",
+    href: "https://www.linkedin.com/in/saee-bhanuskar-8a80ba314/",
     label: "LinkedIn",
   },
   {
     icon: FiMail,
-    href: "mailto:patilsiddhesh2810@gmail.com",
+    href: "mailto:saeebhanuskar@gmail.com",
     label: "Email",
   },
   {
     icon: SiInstagram,
-    href: "https://www.instagram.com/siddhu_patil_30",
+    href: "https://www.instagram.com/_.aboli._28",
     label: "Instagram",
   },
   {
     icon: SiMedium,
-    href: "https://medium.com/@patilsiddhesh2810",
+    href: "https://medium.com/@saeebhanuskar",
     label: "Medium",
   },
   {
     icon: SiVercel,
-    href: "https://vercel.com/siddhesh-pravin-patil-s-projects",
+    href: "https://vercel.com/saee-bhanuskar",
     label: "Vercel",
   },
 ];

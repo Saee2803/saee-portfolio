@@ -26,13 +26,14 @@ import {
     SiHtml5,
     SiJavascript,
     SiLinux,
+    SiMongodb,
     SiMysql,
     SiNumpy,
     SiPandas,
     SiPython,
     SiReact,
     SiScikitlearn,
-    SiSupabase,
+
     SiTableau,
 } from "react-icons/si";
 import { TbChartDonutFilled } from "react-icons/tb";
@@ -58,7 +59,8 @@ const programmingSkills: SkillItem[] = [
 
 const databaseSkills: SkillItem[] = [
   { icon: SiMysql, name: "MySQL", color: "#4479A1" },
-  { icon: SiSupabase, name: "Supabase", color: "#3ECF8E" },
+  { icon: SiMongodb, name: "MongoDB", color: "#13AA52" },
+  
 ];
 
 const mlSkills: SkillItem[] = [

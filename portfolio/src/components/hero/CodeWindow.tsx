@@ -17,7 +17,7 @@ const codeLines = [
     segments: [
       { text: "name", color: "#93c5fd" },
       { text: ": ", color: "#e2e8f0" },
-      { text: '"Siddhesh Patil"', color: "#86efac" },
+      { text: '"Saee Bhanuskar"', color: "#86efac" },
       { text: ",", color: "#e2e8f0" },
     ],
   },
@@ -26,7 +26,7 @@ const codeLines = [
     segments: [
       { text: "role", color: "#93c5fd" },
       { text: ": ", color: "#e2e8f0" },
-      { text: '"Full Stack Developer"', color: "#86efac" },
+      { text: '"AI & Frontend Developer"', color: "#86efac" },
       { text: ",", color: "#e2e8f0" },
     ],
   },
@@ -40,9 +40,9 @@ const codeLines = [
   {
     indent: 2,
     segments: [
-      { text: '"React"', color: "#86efac" },
+      { text: '"Python"', color: "#86efac" },
       { text: ", ", color: "#e2e8f0" },
-      { text: '"Next.js"', color: "#86efac" },
+      { text: '"MongoDB"', color: "#86efac" },
       { text: ",", color: "#e2e8f0" },
     ],
   },
@@ -60,7 +60,7 @@ const codeLines = [
     segments: [
       { text: "passion", color: "#93c5fd" },
       { text: ": ", color: "#e2e8f0" },
-      { text: '"Building cool things"', color: "#fbbf24" },
+      { text: '"Building AI-powered applications"', color: "#fbbf24" },
     ],
   },
   { indent: 0, segments: [{ text: "};", color: "#e2e8f0" }] },

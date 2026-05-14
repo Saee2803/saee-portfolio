@@ -50,7 +50,7 @@ export default function Navbar() {
               <span className="text-light-text dark:text-white">&lt;</span>
               <span className="gradient-text font-extrabold italic">
                 {" "}
-                Siddhesh Patil{" "}
+                Saee Bhanuskar{" "}
               </span>
               <span className="text-light-text dark:text-white">/&gt;</span>
             </motion.span>

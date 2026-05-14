@@ -13,19 +13,19 @@ const socials = [
   {
     icon: FiGithub,
     label: "GitHub",
-    href: "https://github.com/siddhesh940",
+    href: "https://github.com/Saee2803",
     color: "hover:text-white",
   },
   {
     icon: FiLinkedin,
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/siddhesh-patil-268b96311/",
+    href: "https://www.linkedin.com/in/saee-bhanuskar-8a80ba314/",
     color: "hover:text-blue-400",
   },
   {
     icon: FiMail,
     label: "Email",
-    href: "mailto:patilsiddhesh2810@gmail.com",
+    href: "mailto:saeebhanuskar@gmail.com",
     color: "hover:text-red-400",
   },
 ];
@@ -48,14 +48,14 @@ export default function ContactInfo() {
                     transition-all duration-300"
       >
         {/* Name & Role */}
-        <h3 className="text-2xl font-bold text-white">Siddhesh Patil</h3>
+        <h3 className="text-2xl font-bold text-white">Saee Bhanuskar</h3>
         <p className="mt-1 text-indigo-400 font-medium">Full Stack Developer</p>
 
         {/* Details */}
         <div className="mt-6 space-y-4">
           <div className="flex items-center gap-3 text-gray-300">
             <FiMapPin className="w-5 h-5 text-indigo-400 flex-shrink-0" />
-            <span className="text-sm">Navi Mumbai, India</span>
+            <span className="text-sm">Pen, India</span>
           </div>
           <div className="flex items-center gap-3 text-gray-300">
             <FiCheckCircle className="w-5 h-5 text-emerald-400 flex-shrink-0" />
@@ -92,7 +92,7 @@ export default function ContactInfo() {
 
       {/* Hire Me Button */}
       <a
-        href="mailto:patilsiddhesh2810@gmail.com"
+        href="mailto:saeebhanuskar@gmail.com"
         className="flex items-center justify-center gap-2
                    border border-slate-600 rounded-lg px-6 py-3
                    text-gray-300 font-medium text-sm

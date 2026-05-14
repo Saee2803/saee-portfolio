@@ -21,7 +21,7 @@ export default function LoadingScreen() {
         <span className="text-white">&lt;</span>
         <span className="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent font-extrabold italic">
           {" "}
-          Siddhesh Patil{" "}
+          Saee Bhanuskar{" "}
         </span>
         <span className="text-white">/&gt;</span>
       </motion.div>

@@ -22,7 +22,7 @@ export const blogs: BlogData[] = [
       "https://builder.aws.com/content/39RVN7qrqJdi6rEjGYBynXnqgnA/building-an-ai-powered-interview-preparation-platform-interviewai",
     description:
       "This article explains the architecture, design, and development process of an AI-powered interview preparation platform that provides real-time mock interviews, resume analysis, and performance tracking for students.",
-    author: "Siddhesh Patil",
+    author: "Saee Bhanuskar",
     publishDate: "2025-12-15",
     readTime: "8 min read",
     content: `## Introduction
@@ -61,10 +61,10 @@ Interview.ai demonstrates how AI can be leveraged to democratize interview prepa
     platform: "Medium",
     image: "/blogs/Blog2.png",
     articleLink:
-      "https://medium.com/@patilsiddhesh2810/building-an-ai-powered-interview-preparation-platform-interview-ai-a9dab9cdb082",
+      "https://medium.com/@saeebhanuskar/building-an-ai-powered-interview-preparation-platform-interview-ai-a9dab9cdb082",
     description:
       "A deep dive into building Interview.ai, an intelligent platform that helps students prepare for technical interviews through automated mock interviews, analytics, and resume improvement tools.",
-    author: "Siddhesh Patil",
+    author: "Saee Bhanuskar",
     publishDate: "2025-12-20",
     readTime: "10 min read",
     content: `## The Vision

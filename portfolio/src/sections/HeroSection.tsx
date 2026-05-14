@@ -30,7 +30,7 @@ export default function HeroSection() {
             >
               <span className="text-white">Hi all, I&apos;m </span>
               <span className="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
-                Siddhesh
+                Saee
               </span>{" "}
               <motion.span
                 className="inline-block"
@@ -54,16 +54,16 @@ export default function HeroSection() {
             >
               <p>
                 Welcome to my portfolio! I am a passionate Full-Stack Developer
-                with a strong foundation in modern web development, specializing
-                in building dynamic, intuitive, and scalable web applications
-                with a focus on clean design and efficient functionality.
+                specializing in Python and Flask, with expertise in building
+                dynamic, intuitive, and scalable web applications with clean
+                design and efficient functionality.
               </p>
               <p>
                 I enjoy transforming innovative ideas into practical digital
-                solutions through hands-on project experience. With a growing
-                interest in Artificial Intelligence and Data Science, I aim to
-                leverage technology to solve real-world problems and contribute
-                to impactful, technology-driven projects.
+                solutions through hands-on project experience. With a strong
+                foundation in Python, JavaScript, and modern web technologies, I
+                aim to leverage technology to solve real-world problems and
+                contribute to impactful, technology-driven projects.
               </p>
               <p>
                 Alongside developing personal projects, I actively explore
